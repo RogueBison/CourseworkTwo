@@ -1157,11 +1157,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Internet Scripting\\Code\\CourseworkTwo\\Project_MVC\\Project_MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Marti\\OneDrive\\Desktop\\Internet Scripting\\Code\\CourseworkTwo\\Project_MVC\\Project_MVC.csproj",
       "projectName": "Project_MVC",
-      "projectPath": "c:\\Internet Scripting\\Code\\CourseworkTwo\\Project_MVC\\Project_MVC.csproj",
+      "projectPath": "C:\\Users\\Marti\\OneDrive\\Desktop\\Internet Scripting\\Code\\CourseworkTwo\\Project_MVC\\Project_MVC.csproj",
       "packagesPath": "C:\\Users\\Marti\\.nuget\\packages\\",
-      "outputPath": "c:\\Internet Scripting\\Code\\CourseworkTwo\\Project_MVC\\obj\\",
+      "outputPath": "C:\\Users\\Marti\\OneDrive\\Desktop\\Internet Scripting\\Code\\CourseworkTwo\\Project_MVC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marti\\AppData\\Roaming\\NuGet\\NuGet.Config"
