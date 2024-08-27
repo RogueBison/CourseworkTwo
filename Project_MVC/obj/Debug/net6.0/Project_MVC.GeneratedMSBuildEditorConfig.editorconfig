@@ -1,0 +1,72 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Project_MVC
+build_property.RootNamespace = Project_MVC
+build_property.ProjectDir = c:\Users\Marti\OneDrive\Desktop\Internet Scripting\Code\CourseworkTwo\Project_MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\Marti\OneDrive\Desktop\Internet Scripting\Code\CourseworkTwo\Project_MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Albums/deletePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1zXGRlbGV0ZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Albums/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Albums/InsertPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1zXEluc2VydFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Albums/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1zXE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Albums/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1zXFNlYXJjaC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Albums/updateForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWxidW1zXHVwZGF0ZUZvcm0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/Tracks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhY2tzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/Marti/OneDrive/Desktop/Internet Scripting/Code/CourseworkTwo/Project_MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

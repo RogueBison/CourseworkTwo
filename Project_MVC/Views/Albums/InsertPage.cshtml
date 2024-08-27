@@ -1,0 +1,75 @@
+@model AlbumsViewModel
+@using ChinookEntities
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinook Web App</title>
+</head>
+
+<body>
+    <h1>@Model.Heading</h1>
+
+    <br>
+
+    <form method="post" asp-action="Insert">
+        @Html.AntiForgeryToken()
+        <label for="Title">Album:</label>
+        <input type="text" name="Title">
+        <br>
+        <label for="ArtistId">Artist:</label>
+        <select name="ArtistId" id="ArtistId">
+            <option value="">-- Enter an Artist --</option>
+            @foreach (Artist artist in Model.Artists)
+            {
+                <option value="@artist.ArtistId">@artist.Name</option>
+            }
+        </select>
+        <br>
+        <div id="tracks-container">
+            <div class="track">
+                <label for="TrackName">Track 1:</label>
+                <input type="text" name="Tracks[0]" class="track-input">
+                <button type="button" class="delete-track-btn">Delete Track</button>
+                <br>
+            </div>
+        </div>
+        <button type="button" class="btn-primary" id="add-track-btn">Add a Track</button>
+        <br><br>
+        <input type="submit" class="btn-primary" value="Insert">
+    </form>
+    <br>
+    <a href="~/Albums/Index">Back</a>
+</body>
+
+<script>
+    let trackNum = 2;
+    const trackInputsDiv = document.getElementById("tracks-container");
+
+    function addTrackInput() {
+        const newTrackInput = document.createElement("div");
+        newTrackInput.innerHTML = `
+            <label for="TrackName">Track ${trackNum}:</label>
+            <input type="text" name="Tracks[${trackNum - 1}]" class="track-input">
+            <button type="button" class="delete-track-btn">Delete Track</button>
+            <br>
+        `;
+        trackInputsDiv.appendChild(newTrackInput);
+        trackNum++;
+    }
+
+    trackInputsDiv.addEventListener("click", function (event) {
+        if (event.target.classList.contains("delete-track-btn")) {
+            event.target.parentNode.remove();
+            trackNum--;
+        }
+    });
+
+    document.getElementById("add-track-btn").addEventListener("click", addTrackInput);
+</script>
+
+</html>
+

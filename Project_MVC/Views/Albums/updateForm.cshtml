@@ -1,0 +1,55 @@
+@model AlbumsViewModel
+@using ChinookEntities
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinook Web App</title>
+</head>
+
+<body>
+    <h1>@Model.Heading</h1>
+    <br>
+    <form method="post" asp-action="Update">
+        @Html.AntiForgeryToken()
+        <input type="hidden" name="id" value="@Model.Album.AlbumId">
+        <label for="Title">Album:</label>
+        <input type="text" name="Title" value="@Model.Album.Title">
+        <br>
+        <label for="ArtistName">Artist:</label>
+        <input type="text" name="ArtistName" value="@Model.Album.Artist.Name">
+        <br>
+        @{
+            var counter = 0;
+        }
+        @foreach (Track track in Model.Tracks)
+        {
+            counter++;
+            <label for="TrackName@counter">Track @counter:</label>
+            <input type="text" name="TrackNames[]" value="@track.Name">
+            <input type="hidden" name="TrackIds[]" value="@track.TrackId">
+            <button type="button" onclick="deleteTrack(@track.TrackId)">Delete</button>
+            <br>
+        }
+        <hr>
+        <label for="NewTrackName">New Track:</label>
+        <input type="text" name="NewTrackName">
+        <input type="submit" class="btn-primary" value="Update">
+    </form>
+
+    <a href="~/Albums/Index">Back</a>
+</body>
+
+<script>
+    function deleteTrack(trackId) {
+    if (confirm("Are you sure you want to delete this track?")) {
+        window.location.href = '@Url.Action("DeleteSingleTrack", "Albums")' + "?id=" + trackId;
+    }
+}
+</script>
+
+</html>
+

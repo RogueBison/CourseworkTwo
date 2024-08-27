@@ -1,0 +1,42 @@
+@model TracksViewModel
+@using ChinookEntities
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinook Web App</title>
+    <style>
+        td,
+        th {
+            padding: 5px;
+        }
+
+        #delete {
+            background-color: red;
+            color: #fff;
+        }
+
+        #details {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@Model.trackHeading</h1></br>
+
+    <ol>
+        @foreach (Track track in @Model.Tracks)
+        {
+            <li>@track.Name</li>
+        }
+    </ol>
+
+    <a href="~/Albums/Index">Back</a>
+</body>
+
+</html>
+

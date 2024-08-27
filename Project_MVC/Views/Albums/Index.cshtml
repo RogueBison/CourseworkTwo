@@ -1,0 +1,89 @@
+@model AlbumsViewModel
+@using ChinookEntities
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chinook Web App</title>
+    <style>
+        td,
+        th {
+            padding: 5px;
+        }
+
+        #details {
+            padding: 5px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1>@Model.Heading</h1>
+
+    <br>
+
+    <a asp-action="InsertPage">Insert Album</a>
+
+    <br>
+
+    <form method="get" asp-action="Search">
+        <input type="text" name="searchText" placeholder="Enter an album title...">
+        <input type="submit" class="btn-primary" value="Search">
+    </form>
+
+    <br>
+
+    <form method="post" asp-action="Order">
+        <label for="orderBy">Order by:</label>
+        <select name="orderBy">
+            <option value="">-- Select an option --</option>
+            <option value="T_ASC">Album Title ASC</option>
+            <option value="A_ASC">Artist Name ASC</option>
+            <option value="T_DESC">Album Title DESC</option>
+            <option value="A_DESC">Artist Name DESC</option>
+        </select>
+        <input type="submit" class="btn-primary" value="Order">
+    </form>
+
+    <br>
+
+    <table border="1">
+        <tr>
+            <th>Album ID</th>
+            <th>Album Title</th>
+            <th>Album Artist</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+        </tr>
+
+        @foreach (Album album in @Model.Albums)
+        {
+            <tr>
+                <td>@album.AlbumId</td>
+                <td><a id="details" class="btn-primary" href="~/Tracks/Index/@album.AlbumId">@album.Title</a></td>
+                <td>@Html.DisplayFor(artist => album.Artist.Name)</td>
+                <td>
+                    <form method="post" asp-action="updateForm">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@album.AlbumId" />
+                        <input type="submit" class="btn-primary" value="Update">
+                    </form>
+                </td>
+                <td>
+                    <form method="post" asp-action="deletePage">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@album.AlbumId" />
+                        <input type="submit" value="Delete" class="btn btn-danger" id="delete">
+                    </form>
+                </td>
+            </tr>
+        }
+    </table>
+</body>
+
+</html>
+
